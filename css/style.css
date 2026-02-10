@@ -1,0 +1,41 @@
+@import url('./_vars.css');
+@import url('./_normalize.css');
+
+html, body {
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+    text-align: center;
+}
+
+body {
+    margin-top: 5%;
+}
+
+.container {
+    background-color: rgb(252, 223, 228);
+    margin: 0 auto;
+    max-width: 60%;
+    border: 2px solid rgb(255, 107, 132);
+}
+
+form > div {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    padding-left: 10%;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-bottom: 5%;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.row_full_name {
+    padding-top: 5%;
+}

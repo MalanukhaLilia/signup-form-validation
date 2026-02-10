@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Registration form</h1>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <form>
+                    <div class="row_full_name">
+                        <label for="full_name" class="form__input">Full name</label>
+                        <input type="text" id="full_name" class="form__input" required>
+                    </div>
+                    <div class="row_email">
+                        <label for="email" class="form__input">Email</label>
+                        <input type="text" id="email" class="form__input" required>
+                    </div>
+                    <div class="row_password">
+                        <label for="password" class="form__input">Password</label>
+                        <input type="text" id="password" class="form__input" required>
+                    </div>
+                    <div class="row_confirm_password">
+                        <label for="confirm_password" class="form__input">Password</label>
+                        <input type="text" id="confirm_password" class="form__input" required>
+                    </div>
+                    <div class="row_gender">
+                        <label class="form__input">Women</label>
+                        <input type="radio" name="gender" value="women">
+                        <label class="form__input">Men</label>
+                        <input type="radio" name="gender" value="men">
+                        <label class="form__input">Other</label>
+                        <input type="radio" name="gender" value="other">
+                    </div>
+                    <div class="row_age">
+                        <label for="age" class="form__input">Age</label>
+                        <input type="text" id="age" class="form__input" required>
+                    </div>
+                    <div class="row_course">
+                        <label for="age" class="form__select">Course</label>
+                        <select name="course" id="form__select">
+                            <option value="" selected disabled>Your course...</option>
+                            <option value="frontend">Front-End</option>
+                            <option value="backend">Back-End</option>
+                        </select>
+                    </div>
+                    <div class="row_full_residential_address">
+                        <label for="full_residential_address">Full residential address</label>
+                        <textarea id="full_residential_address" name="address" rows="4" required></textarea>
+                    </div>
+                    <div class="form_group">
+                        <input type="checkbox" id="privacy" name="privacy_agreed" value="yes" required>
+                        <label for="privacy">I agree to the privacy terms</label>
+                    </div>
+                    <button class="clear_the_form">Clear the form</button>
+                    <button class="register">Register</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
