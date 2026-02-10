@@ -39,3 +39,7 @@ h1 {
 .row_full_name {
     padding-top: 5%;
 }
+
+textarea[name="address"] {
+    resize: none;
+}
